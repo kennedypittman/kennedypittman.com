@@ -125,7 +125,7 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 12rem 0 6rem 0;
+    padding: 12rem 0 3rem 0;
     position: relative;
     z-index: 2;
 }
@@ -199,22 +199,22 @@ body {
 }
 
 .hero-description p {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.5;
     max-width: 500px;
 }
 
 /* Section Styles */
 .about, .connect {
-    padding: 6rem 0;
+    padding: 3rem 0;
     position: relative;
     z-index: 2;
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .section-title {
@@ -245,10 +245,10 @@ body {
 }
 
 .about-paragraph {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     color: var(--text-secondary);
-    line-height: 1.8;
-    margin-bottom: 2rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
 }
 
 .about-paragraph:last-child {
