@@ -88,6 +88,12 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.logo:hover {
+    opacity: 0.8;
 }
 
 .nav-links {
@@ -172,7 +178,7 @@ body {
 }
 
 .hero-image:hover .profile-image {
-    transform: scale(1.02);
+   /* transform: scale(1.02);*/
 }
 
 .hero-text {
