@@ -492,6 +492,20 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-align: left;
+}
+
+/* Responsive adjustments for product header */
+@media (max-width: 768px) {
+    .product-logo {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .product-name {
+        font-size: 2rem;
+        text-align: center;
+    }
 }
 
 .product-description {
@@ -624,12 +638,128 @@ body {
     margin-top: 2rem;
 }
 
+/* Quote/Example Section */
+.quote-section {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.quote-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--accent-green);
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    border-left: 4px solid var(--accent-green);
+    background: rgba(0, 255, 136, 0.05);
+    border-radius: 0 8px 8px 0;
+}
+
+.quote-text::before {
+    content: '"';
+    font-size: 3rem;
+    color: var(--accent-green);
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    line-height: 1;
+    opacity: 0.3;
+}
+
+/* Responsive adjustments for quote */
+@media (max-width: 768px) {
+    .quote-text {
+        font-size: 1.1rem;
+        padding: 1.5rem;
+    }
+}
+
 /* How It Works Section */
 .how-it-works-section {
     margin: 4rem 0;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Example Use Case Section */
+.example-section {
+    margin: 4rem 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.example-content {
+    display: flex;
+    justify-content: center;
+}
+
+.example-card {
+    background: var(--secondary-dark);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 3rem;
+    text-align: center;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.example-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--gradient-primary);
+    opacity: 0.3;
+}
+
+.example-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-green);
+    box-shadow: var(--shadow-hover);
+}
+
+.example-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.example-description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments for example section */
+@media (max-width: 768px) {
+    .example-card {
+        padding: 2rem;
+    }
+
+    .example-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .example-card {
+        padding: 1.5rem;
+    }
+
+    .example-title {
+        font-size: 1.25rem;
+    }
 }
 
 .steps-container {
@@ -709,13 +839,13 @@ body {
 @media (max-width: 768px) {
     .step-item, .step-reverse {
         grid-template-columns: 1fr;
-        text-align: center;
+        text-align: left;
         gap: 1.5rem;
     }
 
     .step-reverse .step-content {
         order: unset;
-        text-align: center;
+        text-align: left;
     }
 
     .step-reverse .step-image {
@@ -725,6 +855,12 @@ body {
     .step-img {
         width: 120px;
         height: 120px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .step-content {
+        text-align: left;
     }
 }
 
@@ -802,6 +938,7 @@ body {
 
     .product-name {
         font-size: 2rem;
+        text-align: center;
     }
 }
 
