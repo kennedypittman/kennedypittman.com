@@ -482,7 +482,7 @@ body {
 }
 
 .logo-icon:hover {
-/*transform: scale(1.05);*/
+    transform: scale(1.05);
 }
 
 .product-name {
@@ -493,6 +493,7 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-align: left;
+    line-height: 1.1;
 }
 
 /* Responsive adjustments for product header */

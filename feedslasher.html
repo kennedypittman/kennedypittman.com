@@ -116,7 +116,7 @@
                         <p class="form-subtitle">I will select a handful of users to reach out to for a product test. This is totally free, I just want to collect your feedback.</p>
                     </div>
 
-                    <form id="waitlist-form" method="POST" action="https://script.google.com/macros/s/AKfycbzr__kDS9uBYrXvtQneN_IQ0yKBRxUlACVAqwmDCvZhMYnD-tjI4d9ywTzvEUY8e5Cp/exec" class="waitlist-form">
+                    <form id="waitlist-form" method="POST" action="https://script.google.com/macros/s/AKfycbx6v70AwPNl1CW68Hv3pv1PzmFG7G-ZML2-J3zRm4uvKur6V-2hgmzrh9m98YIIUuET/exec" target="hidden_iframe" class="waitlist-form">
                         <div class="form-group">
                             <label for="name" class="form-label">Full Name</label>
                             <input type="text" id="name" name="name" required class="form-input" placeholder="Enter your full name">
@@ -140,6 +140,8 @@
                         
                         <div id="form-message" class="form-message"></div>
                     </form>
+                    
+                    <iframe name="hidden_iframe" style="display:none;"></iframe>
                 </div>
 
                 <!-- Contact Section -->
@@ -169,6 +171,21 @@
             <p class="footer-text">&copy; 2025 Kennedy Pittman. Building the future, one product at a time.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('waitlist-form').addEventListener('submit', function() {
+            // Show loading state
+            const submitBtn = this.querySelector('.submit-btn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            btnText.textContent = 'Submitting...';
+            submitBtn.disabled = true;
+            
+            // Redirect after a short delay to allow form submission
+            setTimeout(function() {
+                window.location.href = '/thank-you';
+            }, 1000);
+        });
+    </script>
 </body>
 </html>
 </html>
