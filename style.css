@@ -647,26 +647,15 @@ body {
 .quote-text {
     font-size: 1.2rem;
     font-style: italic;
-    color: var(--accent-green);
+    color: var(--text-secondary);
     line-height: 1.6;
     max-width: 700px;
     margin: 0 auto;
     padding: 2rem;
     position: relative;
     border-left: 4px solid var(--accent-green);
-    background: rgba(0, 255, 136, 0.05);
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 0 8px 8px 0;
-}
-
-.quote-text::before {
-    content: '"';
-    font-size: 3rem;
-    color: var(--accent-green);
-    position: absolute;
-    top: 0.5rem;
-    left: 1rem;
-    line-height: 1;
-    opacity: 0.3;
 }
 
 /* Responsive adjustments for quote */
