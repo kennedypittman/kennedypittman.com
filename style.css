@@ -510,11 +510,11 @@ body {
 }
 
 .product-description {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--text-secondary);
     line-height: 1.6;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 24px auto;
 }
 
 .waitlist-form-section {
@@ -556,6 +556,20 @@ body {
 
 .waitlist-form {
     text-align: left;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight:200;
 }
 
 .form-group {
@@ -602,6 +616,8 @@ body {
 .form-textarea {
     resize: vertical;
     min-height: 100px;
+    padding: 0.875rem 1rem;
+    margin: 0;
 }
 
 .submit-btn {
@@ -673,6 +689,55 @@ body {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Product Preview Section */
+.product-preview-section {
+    margin: 4rem 0;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.preview-image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid var(--border-subtle);
+    transition: var(--transition-smooth);
+    margin: 0 auto 1.5rem auto;
+    display: block;
+}
+
+.preview-image:hover {
+    border-color: var(--accent-green);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.preview-caption {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Media queries for product preview */
+@media (max-width: 768px) {
+    .preview-caption {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .preview-caption {
+        font-size: 0.85rem;
+    }
 }
 
 /* Example Use Case Section */

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjectName - Join the Waitlist</title>
+    <title>FeedSlasher by Kennedy Pittman - Join the Waitlist</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,15 +38,23 @@
                             <!-- Placeholder for your square icon -->
                             <img src="/images/samurai.png" style="width:200px">
                         </div>
-                        <h1 class="product-name">Cut The Noise</h1>
+                        <h1 class="product-name">Cut Through The Noise</h1>
                     </div>
-                    
                     <p class="product-description">
-                        Imagine a news assistant that actually understands you. Every day, it filters hundreds of articles down to the few that align with your goals—and summarizes them so you can act fast.
+                        I don't know about you, but I am too busy to read all the news each day. Even with the best filters, it's a chore. 
+                    </p>
+                    <p class="product-description">
+                        Yet, I depend on catching timely news updates for my job.
+                    </p>
+                    <p class="product-description">
+                        So, I built my own AI-powered news curator to solve this. And it works great!
+                    </p>
+                    <p class="product-description">
+                        Imagine having an assistant that knows what you're after and WHY. Every day, it filters all your news feeds down to the few articles that align with your goals—and summarizes them so you can act fast.
                     </p>
                 </div>
 
-                <!-- How It Works Section -->
+                <!-- How it Works Section -->
                 <div class="how-it-works-section" id="how-it-works">
                     <div class="section-header">
                         <h2 class="section-title">How It Works</h2>
@@ -61,7 +69,7 @@
                             </div>
                             <div class="step-content">
                                 <h3 class="step-title">Train Your AI Assistant</h3>
-                                <p class="step-description">Just tell us your role, what you're interested in reading, and how you will use the information.</p>
+                                <p class="step-description">Tell us your role, what you're interested in reading, and how you will use the information. Add a selection of news feeds.</p>
                             </div>
                         </div>
 
@@ -72,7 +80,7 @@
                             </div>
                             <div class="step-content">
                                 <h3 class="step-title">AI Filters The News</h3>
-                                <p class="step-description">Knowing you, your focus, and your use case - your AI assistant analyzes articles from the last 24hrs and selects the most relevant.</p>
+                                <p class="step-description">Knowing you, your focus, and your use case - your AI assistant analyzes all articles from the last 24hrs and selects the most relevant.</p>
                             </div>
                         </div>
 
@@ -88,6 +96,19 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- App Setup Preview -->
+                <div class="product-preview-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Preview: V1 App</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    
+                    <img src="/images/usecasestep.png" alt="FeedSlasher app setup wizard" class="preview-image">
+                    <p class="preview-caption">The setup wizard helps train your AI assistant to understand your unique needs and goals</p>
+                    <img src="/images/emailsample.png" alt="FeedSlasher app setup wizard" class="preview-image">
+                    <p class="preview-caption">My personal marketing news digest</p>
+                </div>  
 
                 <!-- Example Use Cases Section -->
                 <div class="examples-section" id="examples">
@@ -110,11 +131,17 @@
                     </blockquote>
                 </div>
 
+                <div class="quote-section">
+                    <blockquote class="quote-text">
+                        A policy researcher focused on digital privacy needs to track legislation, regulatory updates, and advocacy movements across jurisdictions. FeedSlasher pulls from a handpicked set of legal, governmental, and nonprofit feeds—surfacing only the updates that match their focus—so they can stay current, brief stakeholders, and respond quickly to emerging policy shifts.
+                    </blockquote>
+                </div>
+
                 <!-- Waitlist Form -->
                 <div class="waitlist-form-section" id="signup">
                     <div class="form-header">
                         <h2 class="form-title">I'm Interested</h2>
-                        <p class="form-subtitle">I will reach out to some of you about a product test. This is totally free; I am just collecting feedback. And if we do a public launch, I will let everyone know!</p>
+                        <p class="form-subtitle">If this sounds interesting, PLEASE let me know and SHARE THIS. <br/>I can't build it if no one wants it!</p>
                     </div>
 
                     <form id="waitlist-form" method="POST" action="https://script.google.com/macros/s/AKfycbxguA39QCHrTYdqdCCseg35e-bhV3oIl24UqtUs6R874P9kGKRKRSxn5D5yyIznftPS/exec" target="hidden_iframe" class="waitlist-form">
@@ -129,8 +156,26 @@
                         </div>
 
                         <div class="form-group">
+                            <label class="form-label" style="margin-bottom:15px">I'm intereseted in...</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="interest_level" value="try_now" required>
+                                    <span class="radio-text">Trying it now</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="interest_level" value="help_build" required>
+                                    <span class="radio-text">Helping you build this</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="interest_level" value="launch_notify" required>
+                                    <span class="radio-text">Launch news only</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="use-case-group" style="display: none;">
                             <label for="interest" class="form-label" style="margin-bottom:10px">How would you use AI-powered news curation?</label>
-                            <textarea id="interest" name="interest" required class="form-textarea" placeholder="Share your unique use case..." rows="4" maxlength="600"></textarea>
+                            <textarea id="interest" name="interest" class="form-textarea" placeholder="Share your unique use case..." rows="4" maxlength="600"></textarea>
                         </div>
 
                         <button type="submit" class="submit-btn">
@@ -173,6 +218,23 @@
     </footer>
 
     <script>
+        // Handle radio button changes to show/hide textarea
+        document.querySelectorAll('input[name="interest_level"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                const useCaseGroup = document.getElementById('use-case-group');
+                const textarea = document.getElementById('interest');
+                
+                if (this.value === 'try_now') {
+                    useCaseGroup.style.display = 'block';
+                    textarea.required = true;
+                } else {
+                    useCaseGroup.style.display = 'none';
+                    textarea.required = false;
+                    textarea.value = ''; // Clear any existing text
+                }
+            });
+        });
+
         document.getElementById('waitlist-form').addEventListener('submit', function() {
             // Show loading state
             const submitBtn = this.querySelector('.submit-btn');
@@ -187,5 +249,4 @@
         });
     </script>
 </body>
-</html>
 </html>
