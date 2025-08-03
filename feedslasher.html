@@ -116,7 +116,7 @@
                         <p class="form-subtitle">I will select a handful of users to reach out to for a product test. This is totally free, I just want to collect your feedback.</p>
                     </div>
 
-                    <form id="waitlist-form" class="waitlist-form">
+                    <form id="waitlist-form" method="POST" action="https://script.google.com/macros/s/AKfycbyz1rwTbbbCR6gQte0QRNR0b11tL-uaUtmY4Ld5sSfqFknOa1B-lkNGvNzU-yjlSyj9/exec" class="waitlist-form">
                         <div class="form-group">
                             <label for="name" class="form-label">Full Name</label>
                             <input type="text" id="name" name="name" required class="form-input" placeholder="Enter your full name">
@@ -169,52 +169,6 @@
             <p class="footer-text">&copy; 2025 Kennedy Pittman. Building the future, one product at a time.</p>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('waitlist-form').addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
-            const submitBtn = this.querySelector('.submit-btn');
-            const btnText = submitBtn.querySelector('.btn-text');
-            const messageDiv = document.getElementById('form-message');
-            
-            // Show loading state
-            btnText.textContent = 'Submitting...';
-            submitBtn.disabled = true;
-            messageDiv.textContent = '';
-            
-            try {
-                const formData = {
-                    name: document.getElementById('name').value,
-                    email: document.getElementById('email').value,
-                    interest: document.getElementById('interest').value
-                };
-                
-                const response = await fetch('https://script.google.com/macros/s/AKfycby_39N1emxAyp8PwX9cVdrN966iaqjTOWCZL8QGEr08TjDttX9ZYE6T_bHxVxczVmgr/exec', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData)
-                });
-                
-                const result = await response.json();
-                
-                if (result.success) {
-                    messageDiv.innerHTML = '<p style="color: var(--accent-green); margin-top: 1rem;">✅ Thanks for joining the waitlist! I\'ll be in touch soon.</p>';
-                    this.reset();
-                } else {
-                    throw new Error(result.error || 'Submission failed');
-                }
-                
-            } catch (error) {
-                messageDiv.innerHTML = '<p style="color: #ff6b6b; margin-top: 1rem;">❌ Something went wrong. Please try again or email me directly.</p>';
-                console.error('Form submission error:', error);
-            } finally {
-                btnText.textContent = 'Join The List';
-                submitBtn.disabled = false;
-            }
-        });
-    </script>
 </body>
+</html>
 </html>
