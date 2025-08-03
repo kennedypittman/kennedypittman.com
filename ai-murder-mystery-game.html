@@ -29,6 +29,7 @@
             
             <!-- Mobile Menu -->
             <div class="mobile-menu">
+                <button class="mobile-close">&times;</button>
                 <div class="mobile-nav-links">
                     <a href="#game-overview" class="mobile-nav-link">Overview</a>
                     <a href="#screenshots" class="mobile-nav-link">Screenshots</a>
@@ -243,6 +244,13 @@
             mobileMenu.classList.toggle('active');
         });
         
+        // Close menu via 'X' button
+        const closeBtn = document.querySelector('.mobile-close');
+        closeBtn.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+        }); 
+
         // Close mobile menu when clicking on a link
         document.querySelectorAll('.mobile-nav-link').forEach(link => {
             link.addEventListener('click', function() {
