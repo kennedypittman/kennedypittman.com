@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectName - Join the Waitlist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Grain overlay for texture -->
+    <div class="grain-overlay"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="logo">KP</a>
+                <div class="nav-links">
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#signup" class="nav-link">Sign Up</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="waitlist-main">
+        <div class="container">
+            <div class="waitlist-content">
+                
+                <!-- Product Header -->
+                <div class="product-header">
+                    <div class="product-logo">
+                        <div class="logo-icon">
+                            <!-- Placeholder for your square icon -->
+                            <img src="/images/samurai.png" style="width:200px">
+                        </div>
+                        <h1 class="product-name">AI-Curated News Alerts</h1>
+                    </div>
+                    
+                    <p class="product-description">
+                        Surface and summarize the articles that actually match your goals - whatever they are. We're way beyond keyword filters, now!
+                    </p>
+                </div>
+
+                <!-- How It Works Section -->
+                <div class="how-it-works-section" id="how-it-works">
+                    <div class="section-header">
+                        <h2 class="section-title">How It Works</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    
+                    <div class="steps-container">
+                        <!-- Step 1 -->
+                        <div class="step-item">
+                            <div class="step-image">
+                                <img src="/images/profilesetup.png" alt="Tell us about yourself" class="step-img">
+                            </div>
+                            <div class="step-content">
+                                <h3 class="step-title">Build Your Assistant</h3>
+                                <p class="step-description">Input who you are, what you want to read, and what you're trying to achieve.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-item step-reverse">
+                            <div class="step-image">
+                                <img src="/images/aicurates.png" alt="AI picks relevant stories" class="step-img">
+                            </div>
+                            <div class="step-content">
+                                <h3 class="step-title">AI Picks The Best Articles</h3>
+                                <p class="step-description">Your AI assistant analyzes new articles from the last day and selects the most relevant for you.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-item">
+                            <div class="step-image">
+                                <img src="/images/aisummarizes.png" alt="Receive curated email" class="step-img">
+                            </div>
+                            <div class="step-content">
+                                <h3 class="step-title">Get Your Digest</h3>
+                                <p class="step-description">Receive a daily email with the top picks, along with an AI-generated summaries. Just the best articles - quickly digestable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Waitlist Form -->
+                <div class="waitlist-form-section" id="signup">
+                    <div class="form-header">
+                        <h2 class="form-title">I'm Interested</h2>
+                        <p class="form-subtitle">I will select a handful of users to reach out to for a product test. This is totally free, I just want to collect your feedback.</p>
+                    </div>
+
+                    <form name="waitlist" method="POST" data-netlify="true" class="waitlist-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="name" required class="form-input" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" required class="form-input" placeholder="Enter your email address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest" class="form-label">How would you use such a service?</label>
+                            <p class="form-help">Tell us what specific features or problems you're hoping we'll solve.</p>
+                            <textarea id="interest" name="interest" required class="form-textarea" placeholder="Share what you're most excited about..." rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span>Join The List</span>
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="contact-section" id="contact">
+                    <div class="contact-card">
+                        <div class="contact-content">
+                            <h3 class="contact-title">Have Questions?</h3>
+                            <p class="contact-description">
+                                Want to learn more or have specific questions about the product? 
+                                I'd love to hear from you.
+                            </p>
+                            <a href="mailto:hello@kennedypittman.com" class="contact-btn">
+                                <span class="contact-icon">✉</span>
+                                <span>Get in Touch</span>
+                                <span class="contact-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Kennedy Pittman. Building the future, one product at a time.</p>
+        </div>
+    </footer>
+</body>
+</html>
