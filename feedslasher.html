@@ -31,6 +31,7 @@
             
             <!-- Mobile Menu -->
             <div class="mobile-menu">
+                <button class="mobile-close">&times;</button>
                 <div class="mobile-nav-links">
                     <a href="#how-it-works" class="mobile-nav-link">How It Works</a>
                     <a href="#examples" class="mobile-nav-link">Examples</a>
@@ -243,6 +244,13 @@
             hamburger.classList.toggle('active');
             mobileMenu.classList.toggle('active');
         });
+
+        // Close menu via 'X' button
+        const closeBtn = document.querySelector('.mobile-close');
+        closeBtn.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+        }); 
         
         // Close mobile menu when clicking on a link
         document.querySelectorAll('.mobile-nav-link').forEach(link => {
