@@ -22,7 +22,24 @@
                     <a href="#signup" class="nav-link">Join The List</a>
                     <!--<a href="#contact" class="nav-link">Contact</a>-->
                 </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu">
+                <div class="mobile-nav-links">
+                    <a href="#how-it-works" class="mobile-nav-link">How It Works</a>
+                    <a href="#examples" class="mobile-nav-link">Examples</a>
+                    <a href="#product-preview-section" class="mobile-nav-link">Preview</a>
+                    <a href="#signup" class="mobile-nav-link cta">Join The List!</a>
+                    <!--<a href="#contact" class="mobile-nav-link">Contact</a>-->
+                    <a href="/" class="mobile-nav-link">kennedypittman.com</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -41,7 +58,7 @@
                         <h1 class="product-name">Cut Through The Noise</h1>
                     </div>
                     <p class="product-description">
-                        I don't know about you, but I am too busy to read all the news each day. Even with the best filters, it's a chore. 
+                        I am too busy to read all of my news feeds each day. Even with the best filters, it's a chore.
                     </p>
                     <p class="product-description">
                         Yet, I depend on catching timely news updates for my job.
@@ -50,7 +67,7 @@
                         So, I built my own AI-powered news curator to solve this. And it works great!
                     </p>
                     <p class="product-description">
-                        Imagine having an assistant that knows what you're after and WHY. Every day, it filters all your news feeds down to the few articles that align with your goals—and summarizes them so you can act fast.
+                        Imagine having an assistant that knows WHAT you're after and WHY. Every day, it filters all your news feeds down to the few articles that align with your goals—and summarizes them so you can act fast.
                     </p>
                 </div>
 
@@ -69,7 +86,7 @@
                             </div>
                             <div class="step-content">
                                 <h3 class="step-title">Train Your AI Assistant</h3>
-                                <p class="step-description">Tell us your role, what you're interested in reading, and how you will use the information. Add a selection of news feeds.</p>
+                                <p class="step-description">Define your role, what you're interested in, and how you will use the information. Pick your selection of news feeds.</p>
                             </div>
                         </div>
 
@@ -98,7 +115,7 @@
                 </div>
                 
                 <!-- App Setup Preview -->
-                <div class="product-preview-section">
+                <div class="product-preview-section" id="product-preview-section">
                     <div class="section-header">
                         <h2 class="section-title">Preview: V1 App</h2>
                         <div class="section-line"></div>
@@ -218,6 +235,31 @@
     </footer>
 
     <script>
+        // Mobile hamburger menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        mobileMenu.addEventListener('click', function(e) {
+            if (e.target === mobileMenu) {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+
         // Handle radio button changes to show/hide textarea
         document.querySelectorAll('input[name="interest_level"]').forEach(radio => {
             radio.addEventListener('change', function() {

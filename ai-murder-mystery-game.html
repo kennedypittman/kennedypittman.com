@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Murder Mystery Game - Kennedy Pittman</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grain-overlay"></div>
+    
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="logo">KP</a>
+                <div class="nav-links">
+                    <a href="#game-overview" class="nav-link">Overview</a>
+                    <a href="#screenshots" class="nav-link">Screenshots</a>
+                    <a href="#play" class="nav-link">Play Game</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu">
+                <div class="mobile-nav-links">
+                    <a href="#game-overview" class="mobile-nav-link">Overview</a>
+                    <a href="#screenshots" class="mobile-nav-link">Screenshots</a>
+                    <a href="#play" class="mobile-nav-link cta">Play Game</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="waitlist-main">
+        <div class="container">
+            <div class="waitlist-content">
+                
+                <!-- Game Header -->
+                <div class="product-header">
+                    <div class="product-logo">
+                        <div class="logo-icon">
+                            <!-- Cover art - optimized for 600x900 (2:3 aspect ratio) -->
+                            <img src="/images/murdermystery.png" alt="AI Murder Mystery Game Cover" style="width: 240px; height: 360px; object-fit: cover; border-radius: 15px; border: 2px solid var(--border-subtle);">
+                        </div>
+                        <h1 class="product-name">AI Murder Mystery</h1>
+                    </div>
+                    <p class="product-description">
+                        What if you could say or do ANYTHING inside a video game, and the world would react naturally? This interactive murder mystery game makes that possible.
+                    </p>
+                    <p class="product-description">
+                        You are the detective with complete freedom to investigate, question suspects, or even goof around to see how people react. Guess the murderer and murder weapon correctly to win. Guess wrong to lose. Or get kicked off the property... or arrested... or killed, or...
+                    </p>
+                    <p class="product-description">
+                        Built as a custom GPT, this game creates a unique mystery for each playthrough with dynamic storytelling that responds to your every action and question.
+                    </p>
+                </div>
+
+                <!-- Game Overview Section -->
+                <div class="how-it-works-section" id="game-overview">
+                    <div class="section-header">
+                        <h2 class="section-title">Game Features</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    
+                    <div class="steps-container">
+                        <!-- Feature 1 -->
+                        <div class="step-item">
+                            <div class="step-content">
+                                <h3 class="step-title">Dynamic Storytelling</h3>
+                                <p class="step-description">Every game randomizes the murderer and murder weapon, and also shuffles the character backstories. No two games are exactly alike.</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="step-item">
+                            <div class="step-content">
+                                <h3 class="step-title">Natural Language Interaction</h3>
+                                <p class="step-description">Ask questions, examine evidence, and interact with suspects using natural conversation. The AI understands context and responds intelligently.</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div class="step-item">
+                            <div class="step-content">
+                                <h3 class="step-title">Sandbox Gameplay</h3>
+                                <p class="step-description">Gather clues, interview witnesses, analyze evidence, and piece together the mystery. Your deductive skills determine the outcome. Or, go wild and see how the world reacts.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 4 -->
+                        <div class="step-item">
+                            <div class="step-content">
+                                <h3 class="step-title">Short Games</h3>
+                                <p class="step-description">The game can usually be solved in 5-10 minutes and isn't too difficult. Just be careful of red herrings!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cheat Codes Section -->
+                <div class="how-it-works-section" id="cheat-codes">
+                    <div class="section-header">
+                        <h2 class="section-title">Cheat Codes</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    
+                    <div class="quote-section">
+                        <div class="quote-text" style="text-align: left; font-style: normal;">
+                            <p style="text-align: center; color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; font-style: italic;">
+                                Winning the game will reveal all cheat codes. Or, if you're impatient...
+                            </p>
+                            <div style="margin-bottom: 1rem; text-align: center;">
+                                <button id="reveal-codes-btn" class="contact-btn" style="background: transparent; border: 1px solid var(--accent-green); color: var(--accent-green); padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                    <span>Reveal Codes</span>
+                                </button>
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <strong class="cheat-code blurred" style="color: var(--accent-green); transition: filter 0.3s ease;">konamicode</strong> - Immediately reveal the solution
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <strong class="cheat-code blurred" style="color: var(--accent-green); transition: filter 0.3s ease;">enter the matrix</strong> - Creative mode. You are no longer bound by realism. Be a wizard, hypnotize the suspects, call Batman to help, etc...
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <strong class="cheat-code blurred" style="color: var(--accent-green); transition: filter 0.3s ease;">HINT</strong> - Hard mode, with extra danger and time constraints
+                            </div>
+                            <div>
+                                <strong class="cheat-code blurred" style="color: var(--accent-green); transition: filter 0.3s ease;">big head mode</strong> - Everything becomes a bit silly and chaotic
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Play Game Section -->
+                <div class="waitlist-form-section" id="play">
+                    <div class="form-header">
+                        <h2 class="form-title">Ready to Solve a Mystery?</h2>
+                        <p class="form-subtitle">Jump into an AI-powered murder mystery where your detective skills will be put to the test.</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <a href="https://chatgpt.com/g/g-688c03e8db408191aba2704f83d334af-murder-mystery-game" target="_blank" class="submit-btn" style="display: inline-flex; text-decoration: none; width: auto; min-width: 200px;">
+                            <span class="btn-text">Play Now</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">
+                            <em>Warning: Free chatgpt accounts will quickly hit a usage limit</em>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshots Section -->
+                <div class="product-preview-section" id="screenshots">
+                    <div class="section-header">
+                        <h2 class="section-title">Game Samples</h2>
+                        <div class="section-line"></div>
+                    </div>
+                      <p class="preview-caption">I suspect the wine might be the murder weapon....</p>
+                    <!-- Chat Example -->
+                    <div class="chatgpt-window">
+                        <!-- User Message -->
+                        <div class="chatgpt-prompt">
+                            <div>
+                                drink the wine
+                            </div>
+                        </div>
+                        
+                        <!-- AI Response -->
+                        <div class="chatgpt-response">
+                            <div>
+                                <p style="margin-bottom: 1rem;">You reach down, lift the <strong>half-full wine glass</strong>, and — ignoring the horrified expressions around the room — <strong>take a long sip</strong>.</p>
+                                <p style="margin-bottom: 1rem;">The wine is rich, dry, and... subtly bitter. There's an odd metallic tang at the back of your tongue. Not quite right.</p>
+                                <p style="margin-bottom: 1rem;"><strong>Nora Fenwick</strong> gasps audibly. <strong>Julian Rook</strong> mutters, "Braver than smart, that one."</p>
+                                <p style="margin-bottom: 1rem;"><strong>Isolde Crane</strong> watches you carefully. Her expression is unreadable.</p>
+                                <p style="margin-bottom: 1rem;">"Well," she says softly, "either you've got a stronger constitution than J.C. did... or he drank from a different glass entirely."</p>
+                                <p style="margin-bottom: 1rem;">Your vision stays clear. Your breathing is fine. No dizziness. <strong>No immediate effect.</strong> But that taste — definitely something off.</p>
+                                <p style="margin-bottom: 1rem; font-weight: 500;">Would you like to:</p>
+                                <ul style="margin: 0; padding-left: 1.2rem; color: var(--text-secondary);">
+                                    <li>Ask someone else about the wine or the glasses?</li>
+                                    <li>Search for another wine glass?</li>
+                                    <li>Press Isolde further?</li>
+                                    <li>Talk to someone new?</li>
+                                    <li>Examine a different part of the room?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    
+                    
+                </div>
+
+                <!-- How I Built This Section -->
+                <div class="examples-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Development Notes</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    
+                    <div style="max-width: 800px; margin: 0 auto; background: var(--accent-dark); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 2rem;">
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                            This game was built using OpenAI's custom GPT platform with a comprehensive prompt system that handles procedural mystery generation. The AI randomly assigns murderers, weapons, and character backstories from predefined pools, then maintains consistent character personalities and story logic throughout the entire playthrough.
+                        </p>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                            The biggest technical challenge was balancing complete player freedom with structured gameplay. Players can literally say or do anything, but the AI must maintain mystery logic, track character motivations, manage win/lose conditions, and ensure the mystery remains solvable. The system includes multiple game modes accessible through hidden cheat codes that fundamentally alter the gameplay experience.
+                        </p>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                            Building this required extensive prompt engineering to create consistent character behavior, procedural story generation, and dynamic response systems that feel natural regardless of what players choose to do or say.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Back to Home -->
+                <div class="contact-section">
+                    <div class="contact-card">
+                        <div class="contact-content">
+                            <h3 class="contact-title">More Projects</h3>
+                            <p class="contact-description">
+                                Check out my other AI experiments and creative projects.
+                            </p>
+                            <a href="/" class="contact-btn">
+                                <span>← Back to Home</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Kennedy Pittman. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile hamburger menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        mobileMenu.addEventListener('click', function(e) {
+            if (e.target === mobileMenu) {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Cheat codes reveal functionality
+        const revealBtn = document.getElementById('reveal-codes-btn');
+        const cheatCodes = document.querySelectorAll('.cheat-code');
+
+        revealBtn.addEventListener('click', function() {
+            cheatCodes.forEach(code => {
+                code.classList.remove('blurred');
+            });
+            
+            // Hide the button after revealing
+            revealBtn.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
