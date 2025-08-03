@@ -924,6 +924,8 @@ body {
     gap: 3rem;
 }
 
+.no-icon-features .step-item {display:block;}
+
 .step-item {
     display: grid;
     grid-template-columns: 200px 1fr;
