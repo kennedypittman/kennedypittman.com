@@ -18,6 +18,7 @@
                 <a href="/" class="logo">KP</a>
                 <div class="nav-links">
                     <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#examples" class="nav-link">Examples</a>
                     <a href="#signup" class="nav-link">Sign Up</a>
                     <a href="#contact" class="nav-link">Contact</a>
                 </div>
@@ -89,7 +90,7 @@
                 </div>
 
                 <!-- Example Use Cases Section -->
-                <div class="examples-section">
+                <div class="examples-section" id="examples">
                     <div class="section-header">
                         <h2 class="section-title">Example Use Cases</h2>
                         <div class="section-line"></div>
@@ -116,7 +117,7 @@
                         <p class="form-subtitle">I will select a handful of users to reach out to for a product test. This is totally free, I just want to collect your feedback.</p>
                     </div>
 
-                    <form id="waitlist-form" method="POST" action="https://script.google.com/macros/s/AKfycbx6v70AwPNl1CW68Hv3pv1PzmFG7G-ZML2-J3zRm4uvKur6V-2hgmzrh9m98YIIUuET/exec" target="hidden_iframe" class="waitlist-form">
+                    <form id="waitlist-form" method="POST" action="https://script.google.com/macros/s/AKfycbzwo5s7d1avvZwHle0BM7pPxyqnS1oZTitTTiaNH8r5kta29-3PFA4Xp7-jr-dYXHij/exec" target="hidden_iframe" class="waitlist-form">
                         <div class="form-group">
                             <label for="name" class="form-label">Full Name</label>
                             <input type="text" id="name" name="name" required class="form-input" placeholder="Enter your full name">
@@ -153,7 +154,7 @@
                                 Want to learn more or have specific questions about the product? 
                                 I'd love to hear from you.
                             </p>
-                            <a href="mailto:hello@kennedypittman.com" class="contact-btn">
+                            <a href="#" onclick="location.href='mailto:' + 'ken' + '@' + 'kennedypittman.com'; return false;" class="contact-btn">
                                 <span>Get in Touch</span>
                                 <span class="contact-arrow">→</span>
                             </a>
