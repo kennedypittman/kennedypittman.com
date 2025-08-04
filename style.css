@@ -681,6 +681,8 @@ body.light-theme p.about-paragraph {color:var(--primary-dark);}
     letter-spacing: -0.02em;
 }
 
+
+
 /* Responsive adjustments for product header */
 @media (max-width: 768px) {
     .product-logo {
@@ -841,6 +843,89 @@ body.light-theme p.about-paragraph {color:var(--primary-dark);}
 
 .contact-section {
     margin-top: 2rem;
+}
+
+/* LinkedIn Section */
+.linkedin-section {
+    margin: 3rem 0;
+}
+
+.linkedin-card {
+    background: var(--accent-dark);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition-smooth);
+}
+
+.linkedin-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-green);
+}
+
+.linkedin-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.linkedin-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 0.5rem 0;
+}
+
+.linkedin-description {
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin: 0 0 1.5rem 0;
+    font-size: 1rem;
+}
+
+.linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #0077b5;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.linkedin-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.linkedin-btn:hover {
+    background: #005885;
+    transform: translateX(2px);
+}
+
+.linkedin-arrow {
+    transition: var(--transition-smooth);
+}
+
+.linkedin-btn:hover .linkedin-arrow {
+    transform: translateX(4px);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .linkedin-section {
+        margin: 2rem 0;
+    }
+    
+    .linkedin-card {
+        padding: 1.5rem;
+    }
 }
 
 /* Quote/Example Section */
