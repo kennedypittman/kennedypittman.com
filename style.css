@@ -705,6 +705,7 @@ body.light-theme p.about-paragraph {color:var(--primary-dark);}
     line-height: 1.6;
     max-width: 500px;
     margin: 24px auto;
+    text-align:left;
 }
 
 .waitlist-form-section {
@@ -931,7 +932,7 @@ body.light-theme p.about-paragraph {color:var(--primary-dark);}
 /* Quote/Example Section */
 .quote-section {
     margin: 3rem 0;
-    text-align: center;
+    text-align: left;
 }
 
 .quote-text {
