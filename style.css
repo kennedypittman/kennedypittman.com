@@ -48,7 +48,7 @@ body.light-theme .section-title {color:#226242;}
 body.light-theme .section-line {background:#226242;}
 body.light-theme .header, body.light-theme .footer {background:var(--primary-dark);}
 body.light-theme a.connect-card .card-description {color:var(--text-secondary);}
-body.light-theme .connect {background:#ecebec;}
+body.light-theme .connect {background:none;}
 body.light-theme .about {background:none;}
 body.light-theme p.about-paragraph {color:var(--primary-dark);}
 
