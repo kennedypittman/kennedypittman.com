@@ -40,6 +40,7 @@ body {
     position: relative;
 }
 
+/* LIGHT THEME */
 body.light-theme {background:#f2f2f2 !important;}
 body.light-theme h1 {background:linear-gradient(135deg, #090909 0%, #367660 100%);-webkit-background-clip:text;}
 body.light-theme .hero-subtitle {color:#226242;}
@@ -51,6 +52,9 @@ body.light-theme a.connect-card .card-description {color:var(--text-secondary);}
 body.light-theme .connect {background:none;}
 body.light-theme .about {background:none;}
 body.light-theme p.about-paragraph {color:var(--primary-dark);}
+
+/* GAME PAGE */
+.game-page .form-header {margin-bottom:0;}
 
 /* Subtle texture overlay */
 .grain-overlay {
