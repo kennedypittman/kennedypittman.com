@@ -40,6 +40,18 @@ body {
     position: relative;
 }
 
+body.light-theme {background:#f2f2f2 !important;}
+body.light-theme h1 {background:linear-gradient(135deg, #090909 0%, #367660 100%);-webkit-background-clip:text;}
+body.light-theme .hero-subtitle {color:#226242;}
+body.light-theme .hero-description p {color:var(--secondary-dark) !important;} 
+body.light-theme .section-title {color:#226242;}
+body.light-theme .section-line {background:#226242;}
+body.light-theme .header, body.light-theme .footer {background:var(--primary-dark);}
+body.light-theme a.connect-card .card-description {color:var(--text-secondary);}
+body.light-theme .connect {background:#ecebec;}
+body.light-theme .about {background:none;}
+body.light-theme p.about-paragraph {color:var(--primary-dark);}
+
 /* Subtle texture overlay */
 .grain-overlay {
     position: fixed;
@@ -834,7 +846,7 @@ body {
 }
 
 .quote-text {
-    font-size: 1.2rem;
+    font-size: 1.1em;
     font-style: italic;
     color: var(--text-secondary);
     line-height: 1.6;
