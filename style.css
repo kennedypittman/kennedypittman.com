@@ -512,7 +512,7 @@ body.light-theme p.about-paragraph {color:var(--primary-dark);}
     }
     
     .hero {
-        padding: 12rem 0 8rem 0;
+        padding: 10rem 0 0 0;
     }
     
     .hero-content {
