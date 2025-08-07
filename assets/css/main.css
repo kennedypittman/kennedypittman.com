@@ -845,7 +845,7 @@ a.external::after {
     height: 100vh;
     
     /* Background image - replace with your photo */
-    background-image: url('/images/404-astro.png');
+    background-image: url('/images/404-astro.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
