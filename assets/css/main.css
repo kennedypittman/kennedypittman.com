@@ -91,10 +91,12 @@ body {
 .spacer {margin-top:4rem;}
 
 .hero-section {background:#ddd;padding: 4rem 2rem; text-align: center; margin-bottom: 4rem;}
-.feedslasher .hero-section {background: linear-gradient(135deg, #1a041d 0%, #2d0a30 35%, #180419 100%);}
-.murder-mystery .hero-section {background: linear-gradient(135deg, #141a0f 0%, #283020 35%, #0a0f08 100%);}
 .hero-section img {max-height:400px;width:auto;}
 .hero-img {height:auto;width:400px;max-width:100%;}
+.feedslasher .hero-section {background: linear-gradient(135deg, #1a041d 0%, #2d0a30 35%, #180419 100%);}
+.murder-mystery .hero-section {background: linear-gradient(135deg, #141a0f 0%, #283020 35%, #0a0f08 100%);}
+.project-wolf .hero-section {background:#000;}
+
 
 
 
