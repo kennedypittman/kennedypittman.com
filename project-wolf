@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <title>Project Wolf - Kennedy Pittman</title>
+        <meta name="description" content="Concept only: Construction project mobile plan viewer, punch list, and task manager.">
+
+        <!-- Open Graph Tags -->
+        <meta property="og:title" content="Project Wolf - Kennedy Pittman">
+        <meta property="og:description" content="Concept only: Construction project mobile plan viewer, punch list, and task manager.">
+        <meta property="og:image" content="https://kennedypittman.com/images/projectwolf/project-wolf.png">
+        <meta property="og:url" content="https://kennedypittman.com/feedslasher">
+        <meta property="og:type" content="website">
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://kennedypittman.com/project-wolf">
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NHT3C8K');</script>
+        <!-- End Google Tag Manager -->
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="assets/css/main.css?v=2" />
+        <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+    </head>
+	<body class="is-preload project-wolf">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="/" class="logo">
+									<span class="symbol"><img src="favicon.svg" alt="" /></span><span class="title">Kennedy Pittman</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="feedslasher">FeedSlasher (News App)</a></li>
+						<li><a href="ai-murder-mystery-game">AI Murder Mystery (Game)</a></li>
+                        <li><a href="project-wolf">Project Wolf (App Design)</a></li>
+						<li><a href="https://www.linkedin.com/in/kennedypittman/" class="external" target="_blank" rel="noopener">Connect on LinkedIn</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main" class="remove-bottom-padding">
+						<div class="hero-section">
+								
+								<img src="/images/projectwolf/project-wolf.png" alt="project wolf logo" class="hero-img">
+						</div>
+						<div class="inner first-inner">
+							<div >
+                                <h1>Codename: Project Wolf</h1>
+								
+								<h2>A Scrapped Construction App</h2> 
+								<p>
+									Many years ago, a company called Plangrid was the king of the mobile construction planning apps. Then they were acquired. They somewhat disappeared overnight as they were tucked into a much larger behemoth of an app ecosystem. 
+								</p>
+								<p>
+									I briefly explored creating my own variation on the idea - mobile plans, synced across all users, and with added some features of my own. My design drafts received buy-in from my construction manager contacts, but I couldn't bring myself to invest funding or time into what was ultimately a copycat idea.
+								</p>
+							</div>
+						</div>
+
+
+						<div class="align-center dark-bg wide-section" id="app-preview">	
+								<h2>App Concept</h2>	
+								<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+                                    <iframe 
+                                        src="https://www.youtube.com/embed/R2UA9P07bqE?si=U4r0eHyNit5_GUvK" 
+                                        title="YouTube video player" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        referrerpolicy="strict-origin-when-cross-origin" 
+                                        allowfullscreen 
+                                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                                    </iframe>                                    
+                                </div>
+                                <div class="box alt" style="margin-top:4rem;">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="image fit" ><img src="images/projectwolf/1.png" alt=""></span></div>
+											<div class="col-6"><span class="image fit"><img src="images/projectwolf/2.png" alt=""></span></div>
+                                            <div class="col-6"><span class="image fit"><img src="images/projectwolf/3.png" alt=""></span></div>
+                                            <div class="col-6"><span class="image fit"><img src="images/projectwolf/8.png" alt=""></span></div>
+                                            <div class="col-6"><span class="image fit"><img src="images/projectwolf/0.png" alt="" style="border:0px solid #ddd;border-radius:20px;background:#1d0512;"></span></div>
+                                            <div class="col-6"><span class="image fit"><img src="images/projectwolf/4.png" alt="" style="border:0px solid #ddd;border-radius:20px;background:#1d0512;"></span></div>
+                                            <div class="col-6"><span class="image fit"><img src="images/projectwolf/5.png" alt="" style="border:0px solid #ddd;border-radius:20px;background:#1d0512;"></span></div>
+                                            <div class="col-6"><span class="image fit"><img src="images/projectwolf/6.png" alt="" style="border:0px solid #ddd;border-radius:20px;background:#1d0512;"></span></div>
+                                            <div class="col-6"><span class="image fit"><img src="images/projectwolf/7.png" alt="" style="border:0px solid #ddd;border-radius:20px;background:#1d0512;"></span></div>
+										</div>
+									</div>
+
+                        </div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>								
+								<p><strong>Kennedy Pittman</strong> is a marketing strategist, nerd marketer, and creative technologist. I provide full-funnel marketing services to organizations of all sizes with <a href="https://www.atmosphere.us/" target="_blank">Atmosphere Digital</a>. In my spare time I build lightweight AI apps, play guitars loudly, game (occassionally), tinker with 4x4s, and do dad stuff (3x). Based in Raleigh, North Carolina.</p>
+								<div class="inner-scroll-nav"><button onclick="document.getElementById('wrapper').scrollIntoView({behavior: 'smooth'});">To The Top <i class="fas fa-arrow-up"></i></button>
+							</section>
+							<section>
+								<h2>Connect</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/kennedypittman/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://www.facebook.com/kennedypittman" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://github.com/kennedypittman" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"  onclick="location.href='mailto:' + 'ken' + '@' + 'kennedypittman.com'; return false;" class="connect-card communication"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Kennedy Pittman. All rights reserved</li><li>Based on Phantom by <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
