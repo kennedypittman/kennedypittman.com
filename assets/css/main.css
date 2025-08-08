@@ -80,14 +80,14 @@ body {
 
 .img-border-light {border:4px solid #66cb9c;}
 
-.wide-section {padding:43em 2.53em;}
+.wide-section {padding:4em 2.5em;}
 .wide-section .wide-img {margin-bottom:4rem;max-width:100%;}
 @media screen and (max-width: 736px) {
 	.wide-section {padding:4rem 1.25em;}
 }
 .no-padding {padding-left:0;padding-right:0;}
 
-.inner.inner-copy {padding:4rem 2.75rem !important;}
+.inner.inner-copy {padding:4rem 2.5rem !important;}
 .inner.first-inner {padding-bottom:4rem !important;;}
 
 .spacer {margin-top:4rem;}
