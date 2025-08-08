@@ -78,6 +78,7 @@
 						<div class="inner first-inner">
 							
                                 <h1>My AI Work Tools</h1>
+                                <div class="inner-scroll-nav"><button onclick="document.getElementById('seo-page-analysis').scrollIntoView({behavior: 'smooth'});">SEO: Pages Analysis <i class="fas fa-arrow-down"></i></button><button onclick="document.getElementById('seo-backlink-priorities').scrollIntoView({behavior: 'smooth'});">SEO: Backlink Priorities <i class="fas fa-arrow-down"></i></button></div>
 								<p>
                                     These are some of the lightweight apps that I've created for my own work use. Unfortunately, these only exist as private apps (for now?), but they may provide valuable ideas you could steal.
                                 </p>
@@ -88,9 +89,9 @@
 						</div>
 
 
-						<div class="alt2-bg wide-section seo-tool-section">	
+						<div class="alt2-bg wide-section seo-tool-section" id="seo-page-analysis">	
                             <div style="max-width: 68em; margin: 0 auto;">
-                                <h2>1. SEO Planning: Existing Website</h2> 
+                                <h2>1. SEO: Pages Analysis</h2> 
                                 <p>
                                     This tool uses AI to analyze actual webpage <u>content</u>. It is helpful when a website already exists, and I want:
                                 </p>
@@ -223,9 +224,9 @@
                             </div>
                         </div>
 
-                        <div class="inner inner-copy">
+                        <div class="inner inner-copy" id="seo-backlink-priorities">
 							
-                                <h2>2. SEO Backlink Opportunities</h2>
+                                <h2>2. SEO: Backlink Priorities</h2>
 								<p>This tool takes a list of domains and prioritizes them for link building efficiency and impact. I get:</p>
                                 <ol>
                                     <li>A <b>prioritized</b> list of websites to work on</li>
