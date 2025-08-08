@@ -75,7 +75,7 @@ body {
 .white-bg {background:#fff;}
 .alt-bg {background: linear-gradient(135deg, #fefefe 0%, #f4f4f4 35%, #fbfbfb 100%);}
 .alt-bg h1, .alt-bg h2, .alt-bg h3, .alt-bg h4, .alt-bg h5, .alt-bg h6 {color:#66cb9c;}
-.alt2-bg {background:#fbf5fa}
+.alt2-bg {background:#f4f6fa}
 .alt2-bg h1, .alt2-bg h2, .alt2-bg h3, .alt2-bg h4, .alt2-bg h5, .alt2-bg h6 {color:#66cb9c;}
 
 .img-border-light {border:4px solid #66cb9c;}
