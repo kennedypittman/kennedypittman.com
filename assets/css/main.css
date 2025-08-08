@@ -80,10 +80,10 @@ body {
 
 .img-border-light {border:4px solid #66cb9c;}
 
-.wide-section {padding:4rem 6rem;}
+.wide-section {padding:43em 2.53em;}
 .wide-section .wide-img {margin-bottom:4rem;max-width:100%;}
 @media screen and (max-width: 736px) {
-	.wide-section {padding:4rem 2rem;}
+	.wide-section {padding:4rem 1.25em;}
 }
 .no-padding {padding-left:0;padding-right:0;}
 
