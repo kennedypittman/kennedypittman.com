@@ -1,4 +1,4 @@
-@import url(fontawesome-all.min.css);
+@import url(all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
 /*
@@ -120,7 +120,7 @@ body {
 .feature-icon {
     font-size: 2rem;
     color: #065f46;
-    margin-bottom: 1rem;
+    margin:0 auto 1rem auto;
     display: block;
 }
 
@@ -3058,11 +3058,11 @@ input, select, textarea {
 			line-height: inherit;
 		}
 
-		.icon.solid:before {
+		.icon.fa-solid:before {
 			font-weight: 900;
 		}
 
-		.icon.brands:before {
+		.icon.fa-brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
