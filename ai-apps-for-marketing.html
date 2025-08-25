@@ -80,7 +80,7 @@
 						<div class="inner first-inner">
 							
                                 <h1>AI-Enhanced Apps For Marketing</h1>
-                                <div class="inner-scroll-nav"><button onclick="document.getElementById('seo-page-analysis').scrollIntoView({behavior: 'smooth'});">SEO: Pages Analysis <i class="fa-solid fa-arrow-down"></i></button><button onclick="document.getElementById('seo-backlink-priorities').scrollIntoView({behavior: 'smooth'});">SEO: Backlink Priorities <i class="fa-solid fa-arrow-down"></i></button></div>
+                                <div class="inner-scroll-nav"><button onclick="document.getElementById('seo-page-analysis').scrollIntoView({behavior: 'smooth'});">SEO: Pages Analysis <i class="fa-solid fa-arrow-down"></i></button><button onclick="document.getElementById('seo-backlink-priorities').scrollIntoView({behavior: 'smooth'});">SEO: Backlink Priorities <i class="fa-solid fa-arrow-down"></i></button><button onclick="document.getElementById('advanced-social-listener').scrollIntoView({behavior: 'smooth'});">Advanced Social Listener <i class="fa-solid fa-arrow-down"></i></button></div>
 								<p>
                                     These are some of the lightweight apps that I've created for my own work use. Unfortunately, these only exist as private apps (for now?), but they may provide valuable ideas you could steal.
                                 </p>
@@ -92,6 +92,7 @@
                                 <ol>
                                     <li><b>SEO Pages Analysis</b> - Immediately generates primary SEO topic, title/meta tags, and keywords for all webpages</li>
                                     <li><b>SEO Backlink Priorities</b> - Creates a prioritized gameplan for getting backlinks from a set of domains</li>
+                                    <li><b>Advanced Social Media Listener</b> - Finds phrase mentions, then validates flagged opportunities with AI, and sends alerts to Slack</li>
                                 </ol>
 						</div>
 
@@ -368,6 +369,28 @@
                                     </div>
 
 						</div>
+
+                        <div class="alt2-bg wide-section seo-tool-section" id="advanced-social-listener">	
+                            <div style="max-width: 68em; margin: 0 auto;">
+                                <h2>3. Advanced Social Media Listener</h2> 
+                                <p>
+                                    I have a couple of different versions of this tool for different social networks. Here's what it does:
+                                </p>
+                                <ol>
+                                    <li>Queries a social media API to find posts with certain keywords or phrases, OR collects posts from subreddit RSS feeds</li>
+                                    <li>Scores each post based on keywords and phrases</li>
+                                    <li>Any posts above a score threshold are sent to AI for analysis</li>
+                                    <li>If the AI determines the post actually matches what I wanted, I get an immediate slack alert</li>
+                                </ol> 
+                                <p>This could be configured for all sorta of social listening purposes. But the benefit here is that I don't have to scrub through posts based on keywords - the AI acts as a personal assistant to only flag what is worthy of my time.</p>
+                                <div class="row gtr-uniform">
+                                    <div class="col-12">
+                                        <span class="image fit"><img src="images/social-listener-slack-alert.png" alt="social media listener slack alert" style="max-width:600px;"></span>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
 
 					</div>
 
