@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="robots" content="index, follow">
+    <title>Backlink Opportunity Finder - Discover & Prioritize Your Best Link Building Opportunities</title>
+    <meta name="description" content="Find and prioritize the highest-value backlink opportunities for your website. Get ranked lists of domains to target first for maximum SEO impact. Start your link building strategy today.">
+    <meta name="keywords" content="backlink opportunities, link building, SEO backlinks, backlink analysis, link building strategy, domain authority, SEO tools">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Backlink Opportunity Finder - Discover & Prioritize Your Best SEO Opportunities">
+    <meta property="og:description" content="Find and prioritize the highest-value backlink opportunities for your website. Get ranked lists of domains to target first.">
+    <meta property="og:type" content="website">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kennedypittman.com/backlink-opportunity-finder" />
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Backlink Opportunity Finder",
+      "description": "Find and prioritize the highest-value backlink opportunities for your website",
+      "url": "https://kennedypittman.com/backlink-opportunity-finder",
+      "applicationCategory": "SEO Tool",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "299",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Source Sans Pro", Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.75;
+            color: #585858;
+            background: #ffffff;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 900;
+            line-height: 1.5;
+            margin: 0 0 2em 0;
+            text-transform: uppercase;
+            letter-spacing: 0.35em;
+        }
+
+        h1 {
+            font-size: 2.75em;
+            font-weight: 700;
+            line-height: 1.3;
+            margin: 0 0 1em 0;
+            letter-spacing: -0.035em;
+            text-transform: none;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        p {
+            margin: 0 0 2em 0;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 6rem 2rem;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            color: #333;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .url-input-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 0 auto 2rem auto;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .url-input-form {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .url-input {
+            flex: 1;
+            padding: 1rem 1.25rem;
+            font-size: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            background: #f8f9fa;
+            font-family: inherit;
+        }
+
+        .url-input:focus {
+            border-color: #66cb9c;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(102, 203, 156, 0.1);
+        }
+
+        .submit-btn {
+            padding: 1rem 1.75rem;
+            background: #66cb9c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .submit-btn:hover {
+            background: #4ade80;
+            transform: translateY(-1px);
+        }
+
+        .price-note {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+        }
+
+        .section.alt-bg {
+            background: #f8f9fa;
+        }
+
+        .inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Sample Report Preview */
+        .report-preview-section {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .report-table-container {
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            overflow: hidden;
+            margin-top: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .report-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .report-table th {
+            background: #f8f9fa;
+            padding: 1rem 0.75rem;
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+            border-bottom: 2px solid #e0e0e0;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .report-table td {
+            padding: 1rem 0.75rem;
+            border-bottom: 1px solid #f0f0f0;
+            vertical-align: top;
+        }
+
+        .report-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .priority-score {
+            font-weight: bold;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            text-align: center;
+            color: white;
+            font-size: 0.9rem;
+            display: inline-block;
+            min-width: 40px;
+        }
+
+        .priority-high { background: #22c55e; }
+        .priority-medium { background: #f59e0b; }
+        .priority-low { background: #6b7280; }
+
+        .domain-cell {
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .difficulty-badge {
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .difficulty-easy { background: #d4edda; color: #155724; }
+        .difficulty-medium { background: #fff3cd; color: #856404; }
+        .difficulty-hard { background: #f8d7da; color: #721c24; }
+
+        .domain-type-badge {
+            background: #e9ecef;
+            color: #495057;
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid rgba(102, 203, 156, 0.2);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: #66cb9c;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .feature-card p {
+            text-align: left;
+            margin-bottom: 0;
+            color: #666;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: white;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: inherit;
+            color: #333;
+        }
+
+        .faq-question:hover {
+            background: #f8f9fa;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            color: #666;
+            line-height: 1.6;
+            display: none;
+        }
+
+        .faq-toggle {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 5rem 2rem;
+            background-color: #f6f6f6;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        .footer h3 {
+            color: #66cb9c;
+            margin-bottom: 1rem;
+        }
+
+        .footer p {
+            margin-bottom: 1.5rem;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #66cb9c;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.35em;
+            font-size: 0.8em;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #4ade80;
+            transform: translateY(-1px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #66cb9c;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: #4ade80;
+        }
+
+        .copyright {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        .copyright a {
+            color: #66cb9c;
+            text-decoration: none;
+        }
+
+        .copyright a:hover {
+            text-decoration: underline;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .close:hover {
+            color: #66cb9c;
+        }
+
+        .tc-content {
+            line-height: 1.6;
+        }
+
+        .tc-content h3 {
+            color: #66cb9c;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .tc-content ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Mobile Responsive */
+        @media screen and (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .url-input-form {
+                flex-direction: column;
+            }
+
+            .url-input-section {
+                padding: 2rem;
+                margin: 0 1rem 2rem 1rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .report-table-container {
+                overflow-x: auto;
+            }
+
+            .report-table {
+                min-width: 800px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .section {
+                padding: 3rem 1rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .hero-section {
+                padding: 4rem 1rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .url-input-section {
+                padding: 1.5rem;
+            }
+
+            .report-table {
+                font-size: 0.8rem;
+            }
+
+            .report-table th,
+            .report-table td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Backlink Opportunity Finder</h1>
+            <p class="hero-subtitle">Discover the highest-priority domains for your link building campaigns. Get ranked, prioritized lists of backlink opportunities so you know exactly which sites to target first.</p>
+            
+            <div class="url-input-section">
+                <form class="url-input-form" onsubmit="handleSubmit(event)">
+                    <input type="url" class="url-input" placeholder="https://yourwebsite.com" required>
+                    <button type="submit" class="submit-btn">Find Opportunities</button>
+                </form>
+                <p class="price-note">One-time analysis: $299 • Get results in 24 hours</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Report Preview -->
+    <section class="report-preview-section">
+        <div class="inner">
+            <h2 style="text-align: center; margin-bottom: 1rem;">Sample Report Preview</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 2rem;">Here's what your prioritized backlink opportunities report will look like:</p>
+            
+            <div class="report-table-container">
+                <table class="report-table">
+                    <thead>
+                        <tr>
+                            <th>Domain</th>
+                            <th>Priority Score</th>
+                            <th>Domain Authority</th>
+                            <th>Difficulty</th>
+                            <th>Relevance</th>
+                            <th>Type</th>
+                            <th>Outreach Strategy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="domain-cell">kitchen-design-trends.com</td>
+                            <td><span class="priority-score priority-high">94</span></td>
+                            <td style="text-align: center; font-weight: 600;">85</td>
+                            <td><span class="difficulty-badge difficulty-easy">Easy</span></td>
+                            <td style="text-align: center;">9.2</td>
+                            <td><span class="domain-type-badge">Blog</span></td>
+                            <td>Offer guest post on latest kitchen renovation trends with before/after photos</td>
+                        </tr>
+                        <tr>
+                            <td class="domain-cell">home-cooking-magazine.com</td>
+                            <td><span class="priority-score priority-high">87</span></td>
+                            <td style="text-align: center; font-weight: 600;">78</td>
+                            <td><span class="difficulty-badge difficulty-medium">Medium</span></td>
+                            <td style="text-align: center;">8.8</td>
+                            <td><span class="domain-type-badge">News</span></td>
+                            <td>Pitch seasonal cooking tips or kitchen organization expert commentary</td>
+                        </tr>
+                        <tr>
+                            <td class="domain-cell">culinary-institute-resources.com</td>
+                            <td><span class="priority-score priority-medium">79</span></td>
+                            <td style="text-align: center; font-weight: 600;">72</td>
+                            <td><span class="difficulty-badge difficulty-hard">Hard</span></td>
+                            <td style="text-align: center;">9.5</td>
+                            <td><span class="domain-type-badge">Resource</span></td>
+                            <td>Create comprehensive kitchen equipment guide for their student resources</td>
+                        </tr>
+                        <tr>
+                            <td class="domain-cell">foodie-lifestyle-blog.com</td>
+                            <td><span class="priority-score priority-medium">74</span></td>
+                            <td style="text-align: center; font-weight: 600;">68</td>
+                            <td><span class="difficulty-badge difficulty-easy">Easy</span></td>
+                            <td style="text-align: center;">8.1</td>
+                            <td><span class="domain-type-badge">Blog</span></td>
+                            <td>Share kitchen storage hacks or meal prep workspace optimization tips</td>
+                        </tr>
+                        <tr>
+                            <td class="domain-cell">professional-chef-directory.com</td>
+                            <td><span class="priority-score priority-medium">68</span></td>
+                            <td style="text-align: center; font-weight: 600;">81</td>
+                            <td><span class="difficulty-badge difficulty-medium">Medium</span></td>
+                            <td style="text-align: center;">7.9</td>
+                            <td><span class="domain-type-badge">Directory</span></td>
+                            <td>Partner on commercial kitchen design case study or equipment recommendations</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p style="text-align: center; margin-top: 2rem; color: #666; font-style: italic;">
+                Your full report will include 50-200 prioritized opportunities with detailed outreach strategies for each domain.
+            </p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section alt-bg">
+        <div class="inner">
+            <h2 style="text-align: center; margin-bottom: 3rem;">What You'll Get</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Priority-Ranked Opportunities</h3>
+                    <p>Get a scored list of domains ranked by priority, relevance, and difficulty so you know exactly which targets to pursue first.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Detailed Domain Analysis</h3>
+                    <p>See domain authority, spam scores, competitor links, and opportunity types for each potential backlink target.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>Outreach Strategies</h3>
+                    <p>Receive specific outreach recommendations for each domain, including the best approach angle for maximum success.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Competitive Intelligence</h3>
+                    <p>Discover where your competitors are getting links and identify gaps in your current backlink profile.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Actionable Export</h3>
+                    <p>Download your results as a spreadsheet with all the data you need to start your outreach campaigns immediately.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Quality Filtering</h3>
+                    <p>We automatically filter out low-quality, spammy, or irrelevant domains to focus only on valuable opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="faq-container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    How does the prioritization work?
+                    <span class="faq-toggle">▼</span>
+                </button>
+                <div class="faq-answer">
+                    We analyze each potential backlink opportunity using multiple factors including domain authority, relevance to your industry, difficulty of acquisition, and competitive advantage. Our advanced algorithms enhance this analysis to give you a priority score, so you can focus your limited time on the highest-value targets first.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    How many opportunities will I get?
+                    <span class="faq-toggle">▼</span>
+                </button>
+                <div class="faq-answer">
+                    Most analyses return 50-200 high-quality opportunities, depending on your industry and competitive landscape. We focus on quality over quantity - every opportunity is vetted and ranked to ensure you're not wasting time on low-value prospects.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    What information do you provide for each opportunity?
+                    <span class="faq-toggle">▼</span>
+                </button>
+                <div class="faq-answer">
+                    For each domain, you'll get: priority score (1-100), domain authority, spam score, relevance rating, difficulty assessment, competitor analysis, domain type (blog, directory, news, etc.), and specific outreach strategy recommendations.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    How long does analysis take?
+                    <span class="faq-toggle">▼</span>
+                </button>
+                <div class="faq-answer">
+                    Most analyses are completed within 24 hours. Complex or highly competitive industries may take up to 48 hours. You'll receive an email notification when your results are ready for download.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    What makes this different from other backlink tools?
+                    <span class="faq-toggle">▼</span>
+                </button>
+                <div class="faq-answer">
+                    Unlike tools that just show you backlink data, we specifically focus on identifying NEW opportunities you don't already have, ranking them by priority, and providing actionable outreach strategies. It's like having an experienced SEO strategist analyze your competitive landscape and create your target list.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Do you guarantee results?
+                    <span class="faq-toggle">▼</span>
+                </button>
+                <div class="faq-answer">
+                    While we can't guarantee that websites will link to you (that depends on your outreach and content), we do guarantee you'll receive a comprehensive, prioritized list of high-quality opportunities as described in our service specifications.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Is this suitable for all industries?
+                    <span class="faq-toggle">▼</span>
+                </button>
+                <div class="faq-answer">
+                    Yes, our analysis works for virtually any industry or niche. The tool automatically adapts to your business type and industry to find the most relevant opportunities. Whether you're B2B SaaS, e-commerce, local services, or content publishing, you'll get tailored results.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>Ready to Find Your Best Backlink Opportunities?</h3>
+                <p>Stop guessing which domains to target. Get a prioritized, data-driven list of your highest-value backlink opportunities and start building links that actually move the needle for your SEO.</p>
+                <a href="#" class="button" onclick="document.querySelector('.url-input').focus(); document.querySelector('.hero-section').scrollIntoView({behavior: 'smooth'});">Get Started Now</a>
+            </div>
+            <div>
+                <h3>Questions?</h3>
+                <p>Need help or have questions about the analysis? Feel free to reach out.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/kennedypittman/" class="social-link" title="LinkedIn">💼</a>
+                    <a href="#" class="social-link" onclick="location.href='mailto:' + 'ken' + '@' + 'kennedypittman.com'; return false;" title="Email">✉️</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Kennedy Pittman. All rights reserved | 
+            <a href="#" onclick="openTermsModal()">Terms & Conditions</a>
+        </div>
+    </footer>
+
+    <!-- Terms & Conditions Modal -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTermsModal()">&times;</span>
+            <div class="tc-content">
+                <h2>Terms & Conditions</h2>
+                <p><strong>Last updated:</strong> December 2024</p>
+
+                <h3>1. Service Description</h3>
+                <p>Backlink Opportunity Finder ("the Service") provides backlink analysis and opportunity identification for websites. The Service analyzes your website and competitive landscape to identify potential backlink opportunities, ranked by priority and relevance.</p>
+
+                <h3>2. Payment and Pricing</h3>
+                <p>The current price for one analysis is $299 USD. Payment is required before analysis begins. All sales are final, subject to our refund policy below.</p>
+
+                <h3>3. Refund Policy</h3>
+                <p>All sales are final. However, if there are technical issues with the delivery of your analysis or if the analysis does not meet the specifications described in our service description, please contact us to discuss resolution options.</p>
+
+                <h3>4. Service Delivery</h3>
+                <p>Analysis results are typically delivered within 24-48 hours via email. Delivery times may vary based on website complexity and current queue volume. We will notify you if any delays are expected.</p>
+
+                <h3>5. Data Usage and Privacy</h3>
+                <p>We collect only the website URL you provide and publicly available information about your website and competitors. We do not access private data, analytics, or proprietary information. Your analysis results are confidential and will not be shared with third parties.</p>
+
+                <h3>6. Accuracy and Disclaimer</h3>
+                <p>While we strive for accuracy, backlink opportunity analysis involves interpretation of publicly available data. We make no guarantees that contacted websites will provide backlinks. Success depends on your outreach efforts and content quality.</p>
+
+                <h3>7. User Responsibilities</h3>
+                <p>You are responsible for:</p>
+                <ul>
+                    <li>Providing a valid website URL that you own or have permission to analyze</li>
+                    <li>Conducting ethical outreach based on our recommendations</li>
+                    <li>Complying with all applicable laws and regulations in your marketing efforts</li>
+                </ul>
+
+                <h3>8. Prohibited Uses</h3>
+                <p>You may not use the Service for:</p>
+                <ul>
+                    <li>Analyzing websites you don't own without permission</li>
+                    <li>Spam or unethical link building practices</li>
+                    <li>Violating any website's terms of service</li>
+                    <li>Any illegal or harmful activities</li>
+                </ul>
+
+                <h3>9. Limitation of Liability</h3>
+                <p>Our liability is limited to the amount you paid for the Service. We are not responsible for any indirect, incidental, or consequential damages arising from use of the Service.</p>
+
+                <h3>10. Intellectual Property</h3>
+                <p>The analysis methodology, reports, and Service are our intellectual property. You may use the results for your own business purposes but may not resell or redistribute our analysis or methodology.</p>
+
+                <h3>11. Changes to Terms</h3>
+                <p>We may update these terms at any time. Continued use of the Service after changes constitutes acceptance of new terms.</p>
+
+                <h3>12. Contact Information</h3>
+                <p>For questions about these terms or the Service, contact us at ken@kennedypittman.com</p>
+
+                <h3>13. Governing Law</h3>
+                <p>These terms are governed by the laws of North Carolina, United States. Any disputes will be resolved in North Carolina courts.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Handle form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            const url = event.target.querySelector('.url-input').value;
+            alert('Analysis request submitted for: ' + url + '\n\nThis is a demo. In the live version, this would redirect to payment and analysis setup.');
+        }
+
+        // FAQ toggle functionality
+        function toggleFAQ(button) {
+            const faqItem = button.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Open clicked item if it wasn't already active
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+
+        // Terms modal functionality
+        function openTermsModal() {
+            document.getElementById('termsModal').style.display = 'block';
+        }
+
+        function closeTermsModal() {
+            document.getElementById('termsModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('termsModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && document.querySelector(href)) {
+                        e.preventDefault();
+                        document.querySelector(href).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
