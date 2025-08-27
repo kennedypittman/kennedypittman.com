@@ -2,23 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://kennedypittman.com/</loc>
+    <loc>https://www.kennedypittman.com/</loc>
+    <lastmod>2025-08-26</lastmod>
   </url>
 
   <url>
-    <loc>https://kennedypittman.com/feedslasher</loc>
+    <loc>https://www.kennedypittman.com/feedslasher</loc>
+    <lastmod>2025-08-26</lastmod>
   </url>
 
   <url>
     <loc>https://www.kennedypittman.com/ai-murder-mystery-game</loc>
+    <lastmod>2025-08-26</lastmod>
   </url>
 
   <url>
     <loc>https://www.kennedypittman.com/project-wolf</loc>
+    <lastmod>2025-08-26</lastmod>
   </url>
 
-   <url>
+  <url>
     <loc>https://www.kennedypittman.com/ai-apps-for-marketing</loc>
+    <lastmod>2025-08-26</lastmod>
   </url>
 
 </urlset>
