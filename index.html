@@ -6,66 +6,104 @@
 -->
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="robots" content="index, follow">
-		<title>Kennedy Pittman</title>
-		<meta name="description" content="VP Marketing at Atmosphere Digital. Adventures in marketing, music, AI, and more. Explore my projects including FeedSlasher and an AI-powered murder mystery.">
-		<meta name="keywords" content="marketing, AI, technology, atmosphere digital">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="robots" content="index, follow">
+  <title>Kennedy Pittman — Marketing, AI & Creative Tech</title>
+  <meta name="description" content="Kennedy Pittman — VP Marketing at Atmosphere Digital. Projects in marketing, AI, music, and more. Explore FeedSlasher and my AI-powered mystery game.">
+  <!-- (meta keywords not used by Google; safe to remove) -->
 
-		<!-- Open Graph Tags -->
-		<meta property="og:title" content="Kennedy Pittman">
-		<meta property="og:description" content="VP Marketing at Atmosphere Digital. Adventures in marketing, music, AI, and more.">
-		<meta property="og:image" content="https://kennedypittman.com/images/headshot.jpg">
-		<meta property="og:url" content="https://kennedypittman.com">
-		<meta property="og:type" content="website">
-		
-		<!-- Canonical URL -->
-		<link rel="canonical" href="https://kennedypittman.com">
-		
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-NHT3C8K');</script>
-		<!-- End Google Tag Manager -->
-		
-		<link rel="icon" type="image/x-icon" href="favicon.ico">	
-		<link rel="stylesheet" href="assets/css/main.css?v=5" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kennedy Pittman">
+  <meta property="og:description" content="VP Marketing at Atmosphere Digital. Projects in marketing, AI, music, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kennedypittman.com/">
+  <meta property="og:site_name" content="Kennedy Pittman">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://kennedypittman.com/images/headshot.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
-		
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kennedy Pittman">
+  <meta name="twitter:description" content="VP Marketing at Atmosphere Digital. Projects in marketing, AI, music, and more.">
+  <meta name="twitter:image" content="https://kennedypittman.com/images/headshot.jpg">
 
-		 <!-- Structured Data -->
-		<script type="application/ld+json">
-		{
-		"@context": "https://schema.org",
-		"@type": "Person",
-		"name": "Kennedy Pittman",
-		"jobTitle": "VP Marketing",
-		"worksFor": {
-			"@type": "Organization",
-			"name": "Atmosphere Digital",
-			"url": "https://atmosphere.us"
-		},
-		"url": "https://kennedypittman.com",
-		"image": "https://kennedypittman.com/images/headshot.jpg",
-		"sameAs": [
-		"https://www.linkedin.com/in/kennedypittman/",
-		"https://soundcloud.com/kennedypittman",
-		"https://www.reddit.com/user/kennedy_real",
-		"https://github.com/kennedypittman"
-		]
-,
-		"knowsAbout": ["Marketing", "AI", "Music", "Technology"],
-		"description": "VP Marketing at Atmosphere Digital with expertise in marketing, AI, and creative projects"
-		}
-		</script>
+  <!-- Canonical -->
+  <link rel="canonical" href="https://kennedypittman.com/">
 
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico">
 
-	</head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css?v=5">
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+
+  <!-- Structured Data: WebSite + Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://kennedypittman.com/#website",
+        "url": "https://kennedypittman.com/",
+        "name": "Kennedy Pittman",
+        "alternateName": "kennedypittman.com",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://kennedypittman.com/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://kennedypittman.com/#person",
+        "name": "Kennedy Pittman",
+        "alternateName": "Ken Pittman",
+        "url": "https://kennedypittman.com/",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://kennedypittman.com/images/headshot.jpg",
+          "width": 1200,
+          "height": 1200
+        },
+        "jobTitle": "VP Marketing",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Atmosphere Digital",
+          "url": "https://www.atmosphere.us/"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/kennedypittman/",
+          "https://github.com/kennedypittman",
+          "https://x.com/bluesmosquito",
+          "https://medium.com/@kenpittman01",
+          "https://soundcloud.com/kennedypittman",
+          "https://open.spotify.com/artist/32az6S1aRERy7MpRXlsFWe"
+        ],
+        "knowsAbout": ["Marketing", "Artificial Intelligence", "Music", "Technology"],
+        "description": "VP Marketing at Atmosphere Digital; projects in marketing, AI, and music."
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NHT3C8K');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
 	<body class="is-preload">
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHT3C8K"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -168,7 +206,7 @@
 								</article>
 								<article class="style2">
 									<span class="image">
-										<img src="images/project-wolf-wolf.jpg" alt="Preject Wolf logo" />
+										<img src="images/project-wolf-wolf.jpg" alt="Project Wolf logo" />
 									</span>
 									<a href="/project-wolf">
 										<h2>Project Wolf</h2>
@@ -245,7 +283,7 @@
 					<footer id="footer">
 						<div class="inner">
 							<section>								
-								<p><strong>Kennedy Pittman</strong> is a marketing strategist, nerd marketer, and creative technologist. I provide full-funnel marketing services to organizations of all sizes with <a href="https://www.atmosphere.us/" target="_blank">Atmosphere Digital</a>. In my spare time I build lightweight AI apps, play guitars loudly, game (occassionally), tinker with 4x4s, and do dad stuff (3x). Based in Raleigh, North Carolina.</p>
+								<p><strong>Kennedy Pittman</strong> is a marketing strategist, nerd marketer, and creative technologist. I provide full-funnel marketing services to organizations of all sizes with <a href="https://www.atmosphere.us/" target="_blank">Atmosphere Digital</a>. In my spare time I build lightweight AI apps, play guitars loudly, game (occasionally), tinker with 4x4s, and do dad stuff (3x). Based in Raleigh, North Carolina.</p>
 								<div class="inner-scroll-nav"><button onclick="document.getElementById('wrapper').scrollIntoView({behavior: 'smooth'});">To The Top <i class="fa-solid fa-arrow-up"></i></button>
 							</section>
 							<section>
