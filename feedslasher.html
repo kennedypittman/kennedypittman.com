@@ -71,6 +71,9 @@
   f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-NHT3C8K');
   </script>
+
+  <script src="https://www.google.com/recaptcha/api.js?render=6Lc9qrkrAAAAAFUh1jc_7McnjNd58XWTMChC-1OT"></script>
+
 </head>
 
 	<body class="is-preload feedslasher">
@@ -232,6 +235,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<div class="form-group" id="use-case-group" style="display: none;">
 								<label for="interest" class="form-label" style="margin-bottom:10px">How would you use AI-powered news curation?</label>
 								<textarea id="interest" name="interest" class="form-textarea" placeholder="Share your unique use case..." rows="4" maxlength="600"></textarea>
+								<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+								<input type="hidden" name="recaptcha_action" value="waitlist_submit">
+
 								</div>
 
 								<button type="submit" class="submit-btn">
@@ -314,6 +320,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						window.location.href = '/list-thank-you';
 					}, 1000);
 				});
+			</script>
+			<script>
+			const form = document.getElementById('waitlist-form');
+
+			form.addEventListener('submit', function (e) {
+				e.preventDefault(); // wait for reCAPTCHA
+
+				const submitBtn = this.querySelector('.submit-btn');
+				const btnText = submitBtn.querySelector('.btn-text');
+				btnText.textContent = 'Submitting...';
+				submitBtn.disabled = true;
+
+				grecaptcha.ready(function() {
+				grecaptcha.execute('6Lc9qrkrAAAAAFUh1jc_7McnjNd58XWTMChC-1OT', {action: 'waitlist_submit'}).then(function(token) {
+					// Put token into the hidden input
+					document.getElementById('g-recaptcha-response').value = token;
+
+					// Now send the form (it posts to your Apps Script as usual)
+					form.submit();
+
+					// Redirect to thank-you page
+					setTimeout(function() {
+					window.location.href = '/list-thank-you';
+					}, 1000);
+				});
+				});
+			});
 			</script>
 
 	</body>
