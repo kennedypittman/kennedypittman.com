@@ -38,6 +38,11 @@
   <link rel="stylesheet" href="/assets/css/main.css?v=5">
   <noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript>
 
+	<style>
+	.grecaptcha-badge { visibility: hidden; }
+	</style>
+
+
   <!-- Structured Data: WebPage + SoftwareApplication (optional) -->
   <script type="application/ld+json">
   {
@@ -241,7 +246,12 @@
           </form>
 
           <iframe name="hidden_iframe" style="display:none;"></iframe>
-        </div>
+		  <p class="recaptcha-disclosure" style="font-size:0.85rem; opacity:0.8; margin-top:0.5rem;text-align:center;">
+			This site is protected by reCAPTCHA and the Google
+			<a href="https://policies.google.com/privacy" rel="noopener">Privacy Policy</a> and
+			<a href="https://policies.google.com/terms" rel="noopener">Terms of Service</a> apply.
+			</p>
+		</div>
       </div>
     </div>
 
